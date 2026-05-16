@@ -1,0 +1,226 @@
+.report-modal {
+  max-width: 700px !important;
+  background: #ffffff;
+}
+
+.award-icon { color: #f59e0b; }
+
+.session-meta {
+  display: flex;
+  gap: 20px;
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.report-section h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.content-box {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  padding: 20px;
+  border-radius: 12px;
+  line-height: 1.6;
+}
+
+.content-box.highlight {
+  background: #f0f9ff;
+  border-color: #bae6fd;
+}
+
+
+.btn-success-report {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-success-report:hover {
+  background-color: #059669;
+}
+
+.report-text {
+  white-space: pre-wrap; /* Keeps line breaks from the textarea */
+  color: #334155;
+}
+
+
+/* Overlay to dim the background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 23, 42, 0.75); /* Dark slate with opacity */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  padding: 20px;
+}
+
+/* Modal Container */
+.report-modal {
+  background: white;
+  width: 100%;
+  max-width: 650px;
+  max-height: 90vh;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  animation: modalScaleUp 0.2s ease-out;
+}
+
+@keyframes modalScaleUp {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Header Section */
+.report-header {
+  padding: 24px;
+  border-bottom: 1px solid #f1f5f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-main {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.award-icon {
+  color: #eab308; /* Amber for the award */
+}
+
+.header-main h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1e293b;
+}
+
+.header-main p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+/* Body Content */
+.report-body {
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.session-meta {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  padding: 12px 16px;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #475569;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Section Layout */
+.report-section {
+  margin-bottom: 24px;
+}
+
+.report-section h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  color: #334155;
+  margin-bottom: 12px;
+}
+
+.content-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.content-box.highlight {
+  background: #f0f9ff;
+  border-color: #bae6fd;
+}
+
+.report-text {
+  margin: 0;
+  line-height: 1.6;
+  color: #334155;
+  white-space: pre-wrap; /* Preserves line breaks from the backend */
+}
+
+.placeholder-text {
+  color: #94a3b8;
+  font-style: italic;
+}
+
+/* Footer Actions */
+.report-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  justify-content: flex-end;
+  background: #fcfcfd;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 4px;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #ef4444;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
